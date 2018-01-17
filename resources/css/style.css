@@ -73,6 +73,7 @@ h4 {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+
   width: auto;
   height: 25rem;
   overflow: hidden;
@@ -111,6 +112,10 @@ nav ul {
 li {
   padding: 1rem 0;
   align-items: center;
+}
+
+.mobile {
+  display: none;
 }
 
 .product-section{
@@ -184,3 +189,125 @@ footer {
   display:flex;
   padding: 1rem 0;
 }
+
+@media only screen and (max-width: 1024px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  nav .site-container {
+    display: none;
+  }
+
+  .mobile li {
+    margin: 0 auto;
+    padding: 0.1rem 0;
+  }
+
+  .mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .product-section figure {
+    width: 47%;
+    flex-shrink: 1;
+  }
+
+  .business-info figure {
+    width: 35%;
+    flex-shrink: 0.2;
+  }
+
+  #eyewear {
+    display: none;
+  }
+
+}
+
+
+  @media only screen and (max-width: 470px) {
+
+    body {
+      font-size: 16px;
+    }
+
+    .site-container {
+      flex-flow: column nowrap;
+      justify-content: flex-end;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+    }
+
+    .logo span {
+      display: none;
+    }
+
+    .logo img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .moto-banner {
+      height: 15rem;
+      vertical-align: baseline;
+    }
+
+    .box {
+      display: flex;
+      background-color: black;
+      width: auto;
+      margin-top: 10rem;
+      padding: 0.5rem 2rem;
+      font-weight: bold;
+      font-size: 0.77rem;
+      width: 100%;
+    }
+
+    .box h4 {
+      font-size: 0.77rem;
+      padding-top: 0.1rem;
+      padding-left: 2rem;
+    }
+
+    .box h1 {
+      font-size: 1rem;
+      padding-left: 2rem;
+    }
+
+    .mobile li {
+      margin: 0 auto;
+      padding: 0.1rem 0;
+    }
+
+    nav .mobile {
+      margin: 0 auto;
+      padding: 0.2rem 0;
+    }
+
+    .product-section figure {
+      width: 90%;
+    }
+
+    #eyewear, #classes {
+      display: none;
+    }
+
+    .business-info figure {
+      width: 90%;
+      margin: auto auto 0.5rem  auto;
+    }
+
+    footer .site-container {
+      text-align: center;
+      justify-content: center;
+      width: 90%;
+      margin:auto;
+    }
+  }
