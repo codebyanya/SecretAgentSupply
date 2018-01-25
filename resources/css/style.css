@@ -9,6 +9,12 @@ html {
   border: 0;
 }
 
+html, body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
 body {
   width: auto;
   font-family: Helvetica;
